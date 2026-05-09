@@ -273,7 +273,7 @@ document.getElementById('petSprite').addEventListener('click', () => {
   state.happy = clamp(state.happy + 5);
   spawnHeart();
   bounceSprite();
-  toast('♥');
+  toast('🤍');
   render();
 });
  
@@ -403,10 +403,18 @@ function die() {
  
 function restart() {
   stages = PET_TYPES[state.petType];
-  state.hunger=80; state.happy=80; state.health=80;
-  state.age=0; state.alive=true; state.sleeping=false;
-  state.poop=false; state.stage=0; state.tickCount=0;
-  state.coins=0; state.goodCare=0; state.badCare=0;
+  state.hunger=80; 
+  state.happy=80; 
+  state.health=80;
+  state.age=0; 
+  state.alive=true; 
+  state.sleeping=false;
+  state.poop=false; 
+  state.stage=0; 
+  state.tickCount=0;
+  state.coins=0; 
+  state.goodCare=0; 
+  state.badCare=0;
   toast('NEW LIFE!');
   render();
 }
