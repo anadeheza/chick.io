@@ -1,19 +1,8 @@
 # Web Tamagotchi 
 
-Made with HTML, CSS and JavaScript, this Tamagotchi styled web is designed for the user to interact with a cute pet. 
+Made with HTML, CSS and JavaScript, this Tamagotchi styled web pet was made to have a fun game to play (always except during class... well there too) 
 
-You can choose your mascot to be either a cat 🐱, a dog🐶, or a chick 🐥.
-
-## Shop
-PIZZA: hunger +40                                   5 coins
-
-CAKE: hunger +30 happiness +20                      8 coins
-
-BALL: happiness +35                                 6 coins
-
-POTION: health +40                                  10 coins
-
-LUCKY: hunger +20, happiness +20, health +20        15 coins
+You can choose your pet to be either a cat 🐱, a dog🐶, or a chick 🐥 and start taking care of them :)
 
 ## Actions & states
 
@@ -36,14 +25,25 @@ Real day/night schedule with background changing
 Random weather changes that causes mood changes
 
 ## Evolution
-Grows with 
+Grows 1 year each 8 ticks that increase with time and care
 
 evolves every 3 years, good care -> good evolution, poor care -> poor evolutions
-
-## Death
-Dies when starved or severely sick (0 of any of those)
 
 ## Coins 
 Earned by playing minigame (win = +3, tie = +1, lose = 0) & for happiness
 
 Can be spend in the shop
+
+## Shop
+PIZZA: hunger +40                                   5 coins
+
+CAKE: hunger +30 happiness +20                      8 coins
+
+BALL: happiness +35                                 6 coins
+
+POTION: health +40                                  10 coins
+
+LUCKY: hunger +20, happiness +20, health +20        15 coins
+
+## Death
+Dies when starved or severely sick (0 of any of those)
