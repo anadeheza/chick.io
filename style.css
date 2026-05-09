@@ -1,5 +1,9 @@
 /* RESET & BASE */
-* { box-sizing: border-box; margin: 0; padding: 0; }
+* { 
+    box-sizing: border-box; 
+    margin: 0; 
+    padding: 0; 
+}
 
 body {
     display: flex;
@@ -590,8 +594,13 @@ body {
     75%      { transform: translateX(6px);  }
 }
 
-.bounce { animation: bounce 0.45s ease !important; }
-.sick   { animation: shake  0.4s infinite !important; }
+.bounce { 
+    animation: bounce 0.45s ease !important; 
+}
+
+.sick   { 
+    animation: shake  0.4s infinite !important; 
+}
 
 .poop {
     font-size: 30px; 
@@ -602,8 +611,13 @@ body {
     transition: transform 0.1s;
 }
 
-.poop:hover  { transform: scale(1.2); }
-.poop:active { transform: scale(0.9); }
+.poop:hover  { 
+    transform: scale(1.2); 
+}
+
+.poop:active { 
+    transform: scale(0.9); 
+}
 
 .zz {
     position: absolute;
