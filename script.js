@@ -83,7 +83,6 @@ document.getElementById('begin-btn').addEventListener('click', () => {
   startGame();
 });
  
-//  GAME START
 function startGame() {
   state.hunger=80; 
   state.happy=80; 
@@ -198,7 +197,7 @@ function evolveCheck() {
   render();
 }
  
-//  RENDER
+
 const moodMap = (h, hp, hl) => {
   if (!state.alive) return '💀';
   if (state.sleeping) return '😴';
@@ -253,7 +252,7 @@ function render(){
     oldPoop.remove();
   }
 
-  // zzz
+  // sleep
   let oldZz = petStage.querySelector('.zz');
   if (sleeping && !oldZz) {
     const z = document.createElement('div');
@@ -267,7 +266,7 @@ function render(){
   sprite.classList.toggle('sick', alive && health < 20);
 }
 
-//  PET TOUCH + love
+//touch
 document.getElementById('petSprite').addEventListener('click', () => {
   if (!state.alive || state.sleeping) return;
   state.happy = clamp(state.happy + 5);
@@ -306,7 +305,7 @@ document.getElementById('btnHeal').addEventListener('click', () => {
  
 document.getElementById('btnShop').addEventListener('click', openShop);
  
-// Rock Paper Scissors
+//game
 function openMinigame() {
   document.getElementById('minigame').style.display = 'flex';
   document.getElementById('mgResult').textContent   = '';
@@ -352,7 +351,7 @@ document.getElementById('mgClose').addEventListener('click', () => {
   document.getElementById('minigame').style.display = 'none';
 });
  
-//  SHOP
+// shop
 function openShop() {
   document.getElementById('shopCoins').textContent = state.coins;
   const container = document.getElementById('shopItems');
@@ -381,7 +380,7 @@ document.getElementById('shopItems').addEventListener('click', e => {
   document.getElementById('coinCount').textContent = state.coins;
   item.effect();
   bounceSprite(); spawnHeart();
-  openShop(); // refresh
+  openShop(); 
   render();
 });
  
@@ -389,7 +388,6 @@ document.getElementById('shopClose').addEventListener('click', () => {
   document.getElementById('shop').style.display = 'none';
 });
  
-//  DEATH & RESTART
 function die() {
   state.alive = false;
   if (state.age > maxAge) {
@@ -424,7 +422,6 @@ function updateRecord() {
   if (el) el.textContent = maxAge > 0 ? 'BEST: ' + maxAge : '';
 }
  
-//  HELPERS
 function clamp(v) { return Math.max(0, Math.min(100, v)); }
  
 function toast(msg, dur=1600) {
