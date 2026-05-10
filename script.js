@@ -2,8 +2,8 @@ const PET_TYPES = {
   egg: [
     { sprite:'🐣', name:'EGG',    evo:'normal' },
     { sprite:'🐥', name:'CHICK',  evo:'normal' },
-    { sprite:'🐦', name:'BIRB',   evo:'normal' },
-    { sprite:'🦜', name:'PIXEL',  evo:'normal' },
+    { sprite:'🐦', name:'YOUNG BIRB',   evo:'normal' },
+    { sprite:'🦜', name:'BIRD',  evo:'normal' },
     { sprite:'🦅', name:'LEGEND', evo:'normal'   },
     { sprite:'🐔', name:'CLUCKY', evo:'bad'    },
   ],
@@ -17,7 +17,7 @@ const PET_TYPES = {
   dog: [
     { sprite:'🐶', name:'PUPPY',  evo:'normal' },
     { sprite:'🐕', name:'DOG',    evo:'normal' },
-    { sprite:'🦮', name:'GUIDE',  evo:'normal' },
+    { sprite:'🦮', name:'GUIDE DOG',  evo:'normal' },
     { sprite:'🐺', name:'WOLF',   evo:'normal'   },
     { sprite:'🐩', name:'POODLE', evo:'bad'    },
   ],
